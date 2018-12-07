@@ -1,3 +1,50 @@
+/* Color pallete
+
+#08415C - blue
+#CC2936 - red
+#6B818C - grey
+#F1BF98 - gold
+#EEE5E9 - platinum
+*/
+
+
+/* Global styles
+---------------------------*/
 body{
-    background: lightgreen;
+    background: white;
+}
+
+a{
+    color: #CC2936;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+/* Header and Footer
+---------------------------*/
+header,footer{
+    
+    background: #08415C;
+    color: aliceblue;
+}
+
+header h1, header h2{
+    
+    color: aliceblue;
+}
+
+/* Work Experience
+---------------------------*/
+.work{
+    
+    background: #EEE5E9;
+}
+
+/* Education
+---------------------------*/
+.education{
+    
+    background: #F1BF98;
 }
