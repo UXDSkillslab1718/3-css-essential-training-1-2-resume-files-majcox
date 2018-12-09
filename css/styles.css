@@ -38,6 +38,8 @@ h3{
 
 h4{
     font-size: 20px;
+    margin-bottom: -5px;
+    margin-top: 35px;
 }
 
 a{
@@ -148,5 +150,7 @@ nav a:hover{
 ---------------------------*/
 .education{
     
-    background: #F1BF98;
+    background: linear-gradient(rgba(141,153,174,0.8), rgba(141,153,174,0.8)),
+        url(../images/View-of-Bratislava.jpg) no-repeat fixed;
+    background-size: cover;
 }
