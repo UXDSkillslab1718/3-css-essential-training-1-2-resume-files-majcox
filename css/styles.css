@@ -24,6 +24,7 @@ body{
 
 h1{
     font-size: 60px;
+    margin-bottom: 10px;
 }
 
 h2{
@@ -50,16 +51,22 @@ a:hover{
 .content-wrap{
     max-height: width: 950px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 50px;
     overflow: auto;
 }
 
 .column-narrow{
-    width: 40%;
+    width: 41%;
     float: left;
     min-height: 175px;
     margin-right: 50px;
     margin-left: 50px;
+}
+
+.column-wide{
+    margin-top: 85px;
+    width: 1050px;
+    margin-left: 100px;
 }
 
 
@@ -79,14 +86,17 @@ header,footer{
 /* Header */
 header h1, header h2{
     color: aliceblue;
-    margin: 0px;
+    max-width: 950px;
+    margin-top: 15px;
 }
 
 .profile-img{
     border-radius: 50%;
     width: 300px;
     height: 300px;
-    margin-right: 30px;
+    margin-right: 40px;
+    margin-top: 45px;
+    margin-left: 12px;
 }
 
 /* Footer */
@@ -101,12 +111,37 @@ footer{
     display: inline-block;
 }
 
+/* Navigation
+---------------------------*/
+nav {
+    text-align: center;
+    background: #ff9191;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: none;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+
 /* Work Experience
 ---------------------------*/
 .work{
     
     background: #EEE5E9;
 }
+
 
 
 /* Education
