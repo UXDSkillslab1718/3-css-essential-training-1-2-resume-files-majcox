@@ -154,3 +154,12 @@ nav a:hover{
         url(../images/View-of-Bratislava.jpg) no-repeat fixed;
     background-size: cover;
 }
+
+@media(max-width: 900px){
+    header{
+        text-align: center;
+    }
+    .profile-img{
+        width: 200px;
+    }
+}
