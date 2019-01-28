@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter Majercik | Resume</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -14,6 +14,7 @@
         <nav>
             <a href="#about">About</a>
             <a href="#work">Work Experience</a>
+            <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -22,7 +23,7 @@
             <div class="column-wide">
               <h1 class="wavy">Peter Majercik</h1>
               <h2>Photographer & Designer</h2>
-              <p>As a photographer, I'm trying to capture the essence of everyday life. As an designer, I'm focusing on creating accessible and relevant design solutions for the people to make their life easier. I'm also a very big fan of extreme sports and art in general.</p>
+              <p>As a photographer, I'm trying to capture the essence of everyday life. As an designer, I'm focusing on creating accessible and relevant design solutions for people to make their life easier. I'm also a very big fan of extreme sports and art in general.</p>
             </div>
         </div>
     </header>
@@ -36,11 +37,11 @@
                 <!-- Job Details: copy this block to add more positions. -->
                 <div class="column-narrow">
                     <h3>Photography</h3>
-                    <h4>Foster Europe (2017)</h4>
+                    <h4>Foster Europe - Freelance (2017)</h4>
                             <p>Foster Europe is a Austrian company which specializes in organizing political events for public society with open discussions. I participated on many international events as a report photographer. My missions was to capture the emotions of the people and the atmospehere of the event.</p>
-                        <h4>STUBA Green Team (2017)</h4>
+                        <h4>STUBA Green Team - Freelance (2017)</h4>
                             <p>STUBA Green Team is the only team in Slovakia that successfully manages to build an electrically-driven formula race car each year. The team consists of students of mainly Slovak University of Technology and aims to be able to compete in the Formula Student competition with more than 500 university teams from all over the world. My role is this team was a product photographer of new racing cars.</p>
-                        <h4>Hellenski / Freelance (2017)</h4>
+                        <h4>Hellenski - Freelance (2017)</h4>
                             <p>Hellenski is a luxurious fashion brand, which specializes in expensive woman wear and dress. I was photographing the beauty of their sessional collections. </p>
                         <h5><p>I provide various photography services ranging from photo reports, lookbooks, campaigns, product photography and fashion photography.</p>
                             <p>See more at <a class="portfolio" href="http://www.yaxxed.com">yaxxed.com</a>.</p></h5>
@@ -49,11 +50,11 @@
                 <div class="column-narrow">
                     <h3>Design</h3>
                     <h4>Martina Murinova Interior Design</h4>
-                        <p>My friend Martina is an interior designer. She specializes in luxurious interiors with basic simple elements. I designed the whole design porfolio for her, communicated trough a modern website.</p>
+                        <p>My friend Martina is an interior designer. She specializes in luxurious interiors using simple elements. I designed a personal porfolio for her, which was presented trough a modern website.</p>
                     <h4>Titan Gym MMA</h4>
-                        <p>Titan Gym is a sport associaton with a focus on martial arts. I was doing a MMA for 1 year. During this time, my trainer asked me to design a logo for a clothing merch.</p>
+                        <p>Titan Gym is a sport associaton with a focus on martial arts. While I was doing this sport, my trainer asked me to design a logo for a clothing merch. The logo was used on on clothes during competitions.</p>
                     <h4>British International School Bratislava</h4>
-                        <p>BISB is the primary/secondary/high school, which my best friend attented. Before his graduation party, he asked me to design their invitation letters. It was a perfect experience, because I could get an instant feedback from many people.</p>
+                        <p>BISB was a high school, of my best friend Alci. Before his graduation party, I was asked to a design an invitation card. It was a perfect experience, because I received an instant feedback from a large group of people.</p>
                     </div>
                  </div>
         </section>
@@ -61,7 +62,7 @@
 
         <!-- // Education -->
         <section id="education" class="education">
-            <div class="content-wrap">
+            <div class="content-wrap edu">
                 <h2>Education</h2>
 
                 <!-- School details: copy this block to add more schools. -->
@@ -84,6 +85,75 @@
             </div>
             </div>
         </section>
+    
+        <!-- // Projects -->
+        <section class="content-wrap" id="projects">
+            <div class="projectts">
+            <h2>Projects</h2>
+            </div>
+            <div class="slideshow-container">
+
+                    <div class="mySlides fade">
+                        <a class="portfolio" href="detailpage.html"><img src="images/DP.jpg" style="width:100%"></a>
+                        <div class="text">Titan Gym MMA</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/DP1.jpg" style="width:100%">
+                        <div class="text1">YAXXED logo</div>
+                    </div>
+
+                <div class="mySlides fade">
+                  <img src="images/DP2.jpg" style="width:100%">
+                  <div class="text1">BSR</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+                <br>
+
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+        
+        
+        
+        </section>
+        
+             
     </main>
     
     <!-- // Footer & contact info -->
@@ -93,8 +163,8 @@
             
             <!-- Social media and contact links. Add or remove any networks. -->
             <div class="contact-info">
-                <a href="mailto:email@example.com">email@example.com</a>
-                <a href="http://yourwebsite.com">yourwebsite.com</a>
+                <a href="mailto:petkq.majercik@gmail.com">Email</a>
+                <a href="http://www.yaxxed.com">Website</a>
                 <a href="#">Twitter</a>
                 <a href="#">LinkedIn</a>
                 <a href="#">Facebook</a>
